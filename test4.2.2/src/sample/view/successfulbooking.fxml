@@ -3,21 +3,57 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="374.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SuccessfulBookingController">
+<AnchorPane prefHeight="374.0" prefWidth="538.0" style="-fx-background-color: AADD7D;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SuccessfulBookingController">
    <children>
-      <Label layoutX="77.0" layoutY="44.0" text="用户名" />
-      <Label layoutX="351.0" layoutY="44.0" text="姓名" />
-      <Label layoutX="77.0" layoutY="144.0" text="始发站" />
-      <Label layoutX="343.0" layoutY="144.0" text="终点站" />
-      <Label layoutX="70.0" layoutY="240.0" text="发车时间" />
-      <Button fx:id="successfulBookingButton" layoutX="65.0" layoutY="303.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="138.0" text="确认" />
-      <Button fx:id="cancelBookingButton" layoutX="331.0" layoutY="303.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="138.0" text="取消" />
-      <Label fx:id="userNameLabel" disable="true" layoutX="134.0" layoutY="44.0" prefHeight="20.0" prefWidth="125.0" text="Label" />
-      <Label fx:id="startStationLabel" disable="true" layoutX="141.0" layoutY="144.0" prefHeight="20.0" prefWidth="125.0" text="Label" />
-      <Label fx:id="trueNameLabel" disable="true" layoutX="400.0" layoutY="44.0" prefHeight="20.0" prefWidth="125.0" text="Label" />
-      <Label fx:id="startTimeLabel" disable="true" layoutX="144.0" layoutY="240.0" prefHeight="20.0" prefWidth="125.0" text="Label" />
-      <Label fx:id="endStationLabel" disable="true" layoutX="400.0" layoutY="144.0" prefHeight="20.0" prefWidth="125.0" text="Label" />
+      <Label layoutX="62.0" layoutY="44.0" prefHeight="19.0" prefWidth="71.0" text="用户名：" textFill="#7d87dd">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="322.0" layoutY="44.0" prefHeight="19.0" prefWidth="71.0" text="姓名：" textFill="#7d87dd">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="62.0" layoutY="144.0" prefHeight="19.0" prefWidth="71.0" text="始发站：" textFill="#7d87dd">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="328.0" layoutY="144.0" prefHeight="19.0" prefWidth="71.0" text="终点站：" textFill="#7d87dd">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="47.0" layoutY="235.0" prefHeight="20.0" prefWidth="71.0" text="发车时间：" textFill="#7d87dd">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="successfulBookingButton" layoutX="65.0" layoutY="303.0" mnemonicParsing="false" onAction="#enSure" prefHeight="51.0" prefWidth="138.0" text="确认" textAlignment="CENTER" textFill="#7d87dd" underline="true">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Button>
+      <Button fx:id="cancelBookingButton" layoutX="331.0" layoutY="303.0" mnemonicParsing="false" onAction="#enSure" prefHeight="51.0" prefWidth="138.0" text="取消" textFill="RED">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Label fx:id="userNameLabel" disable="true" layoutX="134.0" layoutY="44.0" prefHeight="20.0" prefWidth="125.0" text="Label" textFill="#001dff">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="startStationLabel" disable="true" layoutX="141.0" layoutY="144.0" prefHeight="20.0" prefWidth="125.0" text="Label" textFill="#001dff">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="trueNameLabel" disable="true" layoutX="400.0" layoutY="44.0" prefHeight="20.0" prefWidth="125.0" text="Label" textFill="#001dff">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="startTimeLabel" disable="true" layoutX="144.0" layoutY="240.0" prefHeight="20.0" prefWidth="225.0" text="Label" textFill="#001dff">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="endStationLabel" disable="true" layoutX="400.0" layoutY="144.0" prefHeight="20.0" prefWidth="125.0" text="Label" textFill="#001dff">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
    </children>
 </AnchorPane>

@@ -25,7 +25,7 @@ public class   Main extends  Application{
         changeView("view/login.fxml");
         stage.show();
     }
-    public static void changeView(String fxml){
+    public static void changeView(String fxml){//切换页面方法
         Parent root= null;
         try {
             root = FXMLLoader.load(Main.class.getResource(fxml));
@@ -35,7 +35,7 @@ public class   Main extends  Application{
         }
     }
 
-    public static void successfulBookingView(String fxml){
+    public static void successfulBookingView(String fxml){//展示第三个页面方法
         Stage stage =new Stage();
         Parent root= null;
         try {

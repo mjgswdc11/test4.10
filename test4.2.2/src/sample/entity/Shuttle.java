@@ -4,13 +4,20 @@ import java.util.Date;
 
 public class Shuttle {
 
-
-    //private String shuttleID;
+    private Integer shuttleID;
     private String startTime;
     private Float ticketsPrices;
     private Integer ticketsNumber;
+    private String startStation;
+    private String endStation;
 
+    public Integer getShuttleID() {
+        return shuttleID;
+    }
 
+    public void setShuttleID(Integer shuttleID) {
+        this.shuttleID = shuttleID;
+    }
 
     public String getStartTime() {
         return startTime;
@@ -35,15 +42,30 @@ public class Shuttle {
     public void setTicketsNumber(Integer ticketsNumber) {
         this.ticketsNumber = ticketsNumber;
     }
+    public String getStartStation() {
+        return startStation;
+    }
 
+    public void setStartStation(String startStation) {
+        this.startStation = startStation;
+    }
 
+    public String getEndStation() {
+        return endStation;
+    }
+
+    public void setEndStation(String endStation) {
+        this.endStation = endStation;
+    }
 
     public Shuttle() {
     }
-
-    public Shuttle(String startTime, Float ticketsPrices, Integer ticketsNumber) {
+    public Shuttle(Integer shuttleID, String startTime, Float ticketsPrices, Integer ticketsNumber, String startStation, String endStation) {
+        this.shuttleID = shuttleID;
         this.startTime = startTime;
         this.ticketsPrices = ticketsPrices;
         this.ticketsNumber = ticketsNumber;
+        this.startStation = startStation;
+        this.endStation = endStation;
     }
 }

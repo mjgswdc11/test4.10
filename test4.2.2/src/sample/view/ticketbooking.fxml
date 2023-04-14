@@ -18,7 +18,7 @@
             <TableColumn fx:id="ticketsNumber" minWidth="100.0" prefWidth="300.0" text="剩余票数" />
         </columns>
       </TableView>
-      <Button layoutX="415.0" layoutY="258.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="114.0" text="查询" textFill="#7d87dd">
+      <Button fx:id="checkTicketsButton" layoutX="415.0" layoutY="258.0" mnemonicParsing="false" onAction="#checkTickets" prefHeight="59.0" prefWidth="114.0" text="查询" textFill="#7d87dd">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
@@ -28,7 +28,7 @@
             <Font name="System Bold" size="19.0" />
          </font>
       </Button>
-      <Button layoutX="581.0" layoutY="651.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="114.0" text="重置" textFill="RED">
+      <Button fx:id="resetButton" layoutX="581.0" layoutY="651.0" mnemonicParsing="false" onAction="#resetTableView" prefHeight="59.0" prefWidth="114.0" text="重置" textFill="RED">
          <font>
             <Font size="19.0" />
          </font>
@@ -55,6 +55,11 @@
       </Label>
       <ChoiceBox fx:id="startChoiceBox" layoutX="59.0" layoutY="201.0" prefWidth="150.0" />
       <ChoiceBox fx:id="endChoiceBox" layoutX="233.0" layoutY="201.0" prefWidth="150.0" />
-      <DatePicker layoutX="597.0" layoutY="201.0" />
+      <DatePicker fx:id="departureDatePicker" layoutX="597.0" layoutY="201.0" />
+      <Label fx:id="errorinfo" layoutX="567.0" layoutY="264.0" prefHeight="59.0" prefWidth="193.0" text="请至少选择一张车票再查询" textAlignment="CENTER" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
